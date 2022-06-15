@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html{
+    font-size: 62.5%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    /* background: #000; */
+    background-color: #000;
+}
+@font-face{
+    font-family: alagard;
+    src: url(../assets/fonts/alagard.ttf);
+}
+
+.main {
+    background-image: url(../assets/images/BG.png);
+    background-size: 100%;
+}
+.innerNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.nav-item span{
+    color: rgba(255, 255, 255, .5);
+}
+#nav span {
+    font-size: 3.4rem;
+    font-family: alagard;
+    cursor: pointer;
+}
+.nav-item{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding: 1rem;
+}
+.logo-img{
+    width: 9rem;
+}
+.center-img{
+    position: absolute;
+    left:0;
+    right:0;
+
+    margin-left: auto;
+    margin-right: auto;
+    top: 20rem;
+    width: 50rem;
+}
+.center-img img {
+    width: 50rem;
+}
+.social-icon {
+    width: 4.8rem;
+}
+.main-center{
+    margin-top: 14rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-right: 5rem;
+    margin-left: 5rem;
+}
+.nft img{
+    width: 32rem;
+}
+.nft{
+    margin-top: 5rem;
+}
+#nft-right{
+    height: 31rem;
+}
+#nft-left{
+    height: 26rem;
+}
+.popup-root img{
+    width: 18rem;
+}
+.popup-root{
+    position: absolute;
+    top: 23rem;
+    width: 100%;
+}
+#popup-right {
+    position: absolute;
+    top: 5rem;
+    right: 20rem;
+}
+#popup-left{
+    position: absolute;
+    left: 6rem;
+}
+.popup{
+    transform: scale(0);
+    transition: transform 0.1s ease-in-out;;
+}
+.popup.active{
+    transform: scale(1);
+}
+
+#nft-left img{
+    width: 28rem;
+}
+.line-break{
+    height: .5rem;
+    width: 100%;
+    background: white;
+    z-index: 5;
+    position: absolute;
+}
+.title{
+    color: white;
+    font-family: alagard;
+    font-size: 5.4rem;
+    text-decoration: underline;   
+    /* position: absolute; */
+    margin-top: 5rem;
+}
+#showcase{
+    margin-top: 4rem;
+}
+.showcase-img img{
+    width: 100%;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* flowchart */
+#line1{
+    font-size:0;
+    width: 0rem;
+    height: 4vh;
+    /* color:#fff; */
+    /* background-color:white; */
+    border-left: .2rem  dashed white;
+    margin:auto;
+}
+#line2{
+    font-size:0;
+    width: 80rem;
+    height: 0rem;
+    border-top: .2rem  dashed white;
+    margin:auto;
+}
+#line3{
+    font-size:0;
+    width: 0rem;
+    /* height: 4rem; */
+    border-right: .2rem  dashed white;
+    /* margin-right: 10rem; */
+}
+#line4{
+    font-size:0rem;
+    width: 0rem;
+    /* height: 4rem; */
+    border-right: .2rem  dashed white;
+    margin-right: 40rem;
+    margin-left: 40rem;
+}
+#line5{
+    font-size:0;
+    width: 0rem;
+    /* height: 4rem; */
+    border-right: .2rem  dashed white;
+    /* margin-left: 10rem; */
+}
+.line-flex{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    height: 40rem;
+    width: 25rem;
+    background: rgba(128,128,128, .1);
+    border: .1rem solid white;
+    /* margin-top: 5rem; */
+    /* position: absolute; */
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+}
+/* #card-one{
+    left: 12.5rem;
+}
+#card-three{
+    right: 12.5rem;
+}
+#card-two{
+    right: 55rem;
+} */
+.head{
+    width: 15rem;
+    height: 6rem;
+    background-color: white;
+    border-radius: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4.5rem;
+    z-index: 5;
+}
+.head span{
+    color: black;
+    font-size: 3.2rem;
+    font-family: alagard;
+}
+.body{
+    display: flex;
+}
+.body-list{
+    margin-top: 3rem;
+}
+.body-list li{
+    padding: 1rem;
+    color: white;
+    font-size: 1.6rem;
+    font-family: Poppins;
+    font-weight: 300;
+}
+
+#faq{
+    margin-top: 5rem;
+}
+.single-faq{
+    margin-top: 2.5rem;
+    width: 80%;
+    min-height: 5rem;
+    border: .3rem solid white;
+    border-radius: 1rem;
+    display: flex;
+    justify-self: start;
+    padding-left: 2rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+.question{
+    color: white;
+    font-family: alagard;
+    font-size: 2.6rem;
+    display: flex;
+    justify-content: space-between;
+}
+.answer{
+    color: white;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    padding-bottom: 2.6rem;
+}
+.footer-img{
+    margin-top: 10rem;
+}
+.footer-img img {
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+#ME-icon{
+    width: 5.4rem;
+}
+#center-btn {
+    z-index: 1;
+    margin-bottom: 2.5rem;
+}
+#showcase .title{
+    position: absolute;
+}
+button{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+span, img{
+        -webkit-touch-callout: none; /* iOS Safari */
+          -webkit-user-select: none; /* Safari */
+           -khtml-user-select: none; /* Konqueror HTML */
+             -moz-user-select: none; /* Old versions of Firefox */
+              -ms-user-select: none; /* Internet Explorer/Edge */
+                  user-select: none; /* Non-prefixed version, currently
+                                        supported by Chrome, Edge, Opera and Firefox */
+}
+.faq-toggle{
+    cursor: pointer;
+    transform: rotate(180deg);
+    transition: transform .1s ease-in-out;
+}
+
+/* responsive code */
+@media (max-width:998px) {
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width:768px) {
+    html{
+        font-size: 45%;;
+    }
+}
+
+.cards-row{
+    display: flex;
+    justify-content: center;
+    margin-top: -2.5rem;
+}
+#card-two{
+    margin-right: 15rem;
+    margin-left: 15rem;
+}
+
+.vertical-line{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 9rem;
+}
+.nav-item .nav-link span{
+    color: white;
+}
